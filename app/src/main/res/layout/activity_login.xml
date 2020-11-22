@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="4dp"
+
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="这里输入账号"
+        app:hintTextColor="@color/colorAccent"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/login_edit_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_bottom_line" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:hint="这里输入密码"
+        app:hintTextColor="@color/colorAccent"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:inputType="textPassword"
+            android:id="@+id/login_edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_bottom_line" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="下次自动登录"
+        android:id="@+id/login_checkbox"
+        android:checked="true"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"
+        />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:onClick="onClick"
+            android:id="@+id/login_btn_login"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="2"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="Go! (๑•̀ㅂ•́)و✧"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+</LinearLayout>

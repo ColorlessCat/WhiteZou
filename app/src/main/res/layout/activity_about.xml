@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="使用须知"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:text="1.使用本软件产生的一切后果由使用者本人承担(封号之类的,虽然我没被封过).\n2.所有下载上传产生的文件都在内部储存根目录的WhiteZous这个文件夹里,不想用了的话,卸载后记得手动删除这个文件夹.\n3.这个软件BUG极多且不支持后台运行.\n4.以上."
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/about_btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:onClick="onClick"
+            android:text="同意"
+            android:textColor="@color/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/about_btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:onClick="onClick"
+            android:text="同意"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+</LinearLayout>

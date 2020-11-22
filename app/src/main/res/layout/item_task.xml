@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="4dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/item_task_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@mipmap/apk" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/item_task_type"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:src="@mipmap/download_item" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:paddingLeft="4dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_task_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:lines="1"
+            android:text="拳皇2002究极加强版"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/item_task_size"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0KB/84MB"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_task_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:text="2077年7月7日"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_task_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="4dp"
+        android:text="100MB/S"
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_task_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_ripple"
+        android:src="@mipmap/start" />
+
+    <ProgressBar
+        android:id="@+id/item_task_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:max="100" />
+
+
+</RelativeLayout>

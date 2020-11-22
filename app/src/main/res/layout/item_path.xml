@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="0dp"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:background="?selectableItemBackground"
+            android:id="@+id/item_path_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的文件"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="12dp"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="0dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/right_arrow" />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
